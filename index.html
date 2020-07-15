@@ -5,43 +5,58 @@
 </head>
 <body>
 
-<nav>
+<div class="menu">
   <h2 id="logo">Acme Layout</h2>
-  <a href="index.html" class="navlink">Users</a>
-  <a href="index.html" class="navlink">Departments</a>
-  <a href="index.html" class="navlink">Contact</a>
-</nav>
+  <div><a href="index.html" class="navlink">Users</a></div>
+ <div><a href="index.html" class="navlink">Departments</a></div>
+  <div><a href="index.html" class="navlink">Contact</div>
+</div>
 
 <h1>Users</h1>
 
 <div id="createuser">
   <h1> Create a User</h1>
-
-    <div class="container">
+  <div class="container">
+    <div id="fieldnames">
       <h3>First Name</h3>
-      <input id="txtFirstName" placeholder="Jane"/>
-    </div>
-    <div class="container">
       <h3>Last Name</h3>
-      <input id="txtLastName" placeholder="Doe"/>
-</div>
-<div class="container">
       <h3>Department</h3>
+    </div>
+    <div id="fieldinputs" class="container">
+      <input id="txtFirstName" placeholder="Jane"/>
+      <input id="txtLastName" placeholder="Doe"/>
       <select id="dropDepartment">
-        <option value="-- None --">-- None --</option>
+       <option value="-- None --">-- None --</option>
         <option value="Anthropology">Anthropology</option>
         <option value="Math">Math</option>
       </select>
     </div>
-
+  </div>
+  <div id="buttons">
   <input type="button" value="Clear" id="btnClear">
   <input type="button" value="Save" id="btnSave">
+  </div>
 </div>
-
 <div id="userGrid" class="container">
-<div class="userCard container">
+<div class="userCard">
   <h3>User Name</h3>
   <p>Text text here is some text.</p>
+</div>
+<div class="userCard">
+  <h3>User Name</h3>
+  <p>Text text here is some text. abcdefghizld ponnosdw iasppl,mqwdl the quick brown fox jumps over the </p>
+</div>
+<div class="userCard">
+  <h3>User Name</h3>
+  <p>More text for you!</p>
+</div>
+<div class="userCard">
+  <h3>User Name</h3>
+  <p>Your tone seems very pointed right now.</p>
+</div>
+<div class="userCard">
+  <h3>User Name</h3>
+  <p>Hey where did I go?!</p>
 </div>
 
 </div>

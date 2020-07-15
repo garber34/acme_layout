@@ -1,23 +1,55 @@
-nav, .container{
+*{
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
+}
+
+.menu, .container{
   display: flex;
 
 }
 
-h1,h2,h3,p, a{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 
 a{
   color: white;
   text-decoration: none;
+  padding:.5rem;
+  border-radius: 3px;
+}
+a:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 5px 5px 5px black;
 
 }
-nav{
+
+#logo:hover{
+  text-shadow: 3px 2px 1px white;
+}
+
+#logo::selection{
+  text-shadow: 3px 2px 1px red;
+
+}
+
+#buttons{
+  text-align: center;
+  font-size: 0px;;
+}
+
+#btnSave{
+  background-color: blue;
+  color: white;
+  box-shadow: none;
+  border: 0px;
+}
+.menu{
   background-color: darkturquoise;
   justify-content: space-between;
   align-items: center;
-  padding-left: 1rem;
-  padding-right:10rem
+  padding-left: 1%;
+  padding-right:3%;
+  height: fit-content;
 }
 
 #createuser{
@@ -28,10 +60,71 @@ nav{
   padding: 0 1rem 1rem 1rem;
 }
 
-#createuser>.container>input, #createuser>.container>select{
-flex:1;
-height:1.5rem;
-align-self: center;
+#fieldinputs{
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  flex: 1;
+  margin-left: 3%;
+}
 
+input, select{
+  height: 1.5rem;
+}
+
+#usergrid{
+  flex-wrap: wrap;
+  margin-top: 1%;
+}
+.userCard{
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 0 1rem 0 1rem;
+  flex: 0 0 calc(33% - 2rem);
+ }
+
+ .userCard:hover{
+background-color: burlywood;
+box-shadow: 5px 5px 5px black;
+
+ }
+
+ @media(max-width:624px){
+#createuser{
+  width:100%;
+}
+
+#createuser .container{
+  display: block;
+}
+#buttons{
+  display:flex;
+  flex-direction: column;
+}
+#btnClear{
+  border:0px;
+  background-color: white;
+}
+
+ }
+
+ @media(max-width:510px){
+  .userCard{
+    flex: 0 0 calc(50% - 2rem);
+  }
+ }
+
+ @media(max-width:375px){
+  .userCard{
+    flex: 0 0 calc(100% - 2rem);
+  }
+
+  .menu{
+    display: block;
+
+  }
 
 }
+
