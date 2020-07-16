@@ -4,7 +4,7 @@
   color: black;
 }
 
-.menu, .container{
+nav, .container{
   display: flex;
 
 }
@@ -16,12 +16,14 @@ a{
   padding:.5rem;
   border-radius: 3px;
 }
+
 a:hover{
   background-color: white;
   color: black;
   box-shadow: 5px 5px 5px black;
 
 }
+
 
 #logo:hover{
   text-shadow: 3px 2px 1px white;
@@ -43,7 +45,7 @@ a:hover{
   box-shadow: none;
   border: 0px;
 }
-.menu{
+nav{
   background-color: darkturquoise;
   justify-content: space-between;
   align-items: center;
@@ -121,7 +123,7 @@ box-shadow: 5px 5px 5px black;
     flex: 0 0 calc(100% - 2rem);
   }
 
-  .menu{
+  nav{
     display: block;
 
   }
